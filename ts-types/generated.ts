@@ -31,6 +31,9 @@ export declare type Product = {
     price: Scalars["Float"];
     description: Scalars["String"];
     category: Scalars["String"];
-    image: Maybe<Scalars["String"]>;
+    image: Scalars["String"];
     rating: Maybe<Rating>;
 };
+export declare type Category ={
+    name: Scalars['String']
+}

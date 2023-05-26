@@ -1,24 +1,15 @@
-"use client";
 import Image from 'next/image'
 import { useGetProductsQuery } from './redux/product/productApi';
+import Products from '@/components/product/products';
+import CategorySlider from '@/components/category/category-slider';
+import Banner from '@/components/banner/banner';
 
-export default function Home() {
-   const { data: products, isLoading, isError } = useGetProductsQuery()
+const Home = () => (
+       <div>
+      <Banner />
+      <CategorySlider />
+      <Products />
 
-  if (isLoading) {
-    return <div>Loading...</div>
-  }
-
-  if (isError) {
-    return <div>Error occurred while fetching products</div>
-  }
-
-  return (
-    <div>
-      <h1>Products</h1>
-      {/* {products.map((product) => (
-        <div key={product.id}>{product.name}</div>
-      ))} */}
     </div>
   )
-}
+export default Home;
