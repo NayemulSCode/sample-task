@@ -81,13 +81,13 @@ const Products:FC = () => {
                                   <div className="relative group promo_single_item my-[10px] offer_single_item flsh_wd_item md:h-[446px] text-center cursor-pointer rounded-bl-[5px] rounded-br-[5px] bg-[#ffffff] rounded-[5px]">
                                       <div className="md:p-[15px] p-[8px] md:pt-[15px] pt-[40px] relative text-[#000000] bg-[#ffffff] rounded-bl-[5px] rounded-br-[5px]"> 
                                           <p>{product.category}</p>
-                                          <Link href={`/products/${product?.title}`}>
+                                          <Link href={`/products/${product?.id}`}>
                                               {product?.title}
                                           </Link>
 
                                       </div>
                                       <div className="promo_card flsh_wd_img bg-[#ffffff] md:h-[315px] flex items-center justify-center rounded-tl-[5px] rounded-tr-[5px]">
-                                          <Link href={`/products/${product?.title}`}>
+                                          <Link href={`/products/${product?.id}`}>
                                               <div className="nextimg_wrapper">
                                                   <Image
                                                     src={product.image}
