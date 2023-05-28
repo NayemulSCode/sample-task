@@ -112,3 +112,16 @@ h1,h2,h3,h4,h5,h6,a,p,span,strong,button,input{
     right: 0;
     transform: translateY(-50%);
 }
+
+.nextimg_wrapper {
+    width: 100%;
+}
+.nextimg_wrapper > div {
+    position: unset !important;
+}
+.next_img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
