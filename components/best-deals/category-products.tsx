@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const CategoryProducts = () => {
-    const [categoryName ,setCategoryName] = useState<string>('')
+    const [categoryName, setCategoryName] = useState<string>('electronics')
     const { data: products, isLoading, isError } = useGetCategoryProductsQuery({
         limit: 5,
         categoryName: categoryName,
