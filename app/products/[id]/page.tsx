@@ -2,19 +2,23 @@
 import React,{FC} from 'react'
 import { useRouter } from 'next/navigation';
 import { useGetProductQuery } from '../../redux/product/productApi';
+import LoadingComponent from '@/components/ui/LoadingComponent';
+import ErrorComponent from '@/components/ui/ErrorComponentProps ';
+import Image from 'next/image';
 
 const ProductDetailPage:FC = ({ params }:any) => {
     const router = useRouter()
-    const { data: productDetails, isLoading, isError } = useGetProductQuery(params?.id as string);
+    const { data: productDetails, isLoading, isError, error } = useGetProductQuery(params?.id as string);
 
     if (isLoading) {
-        return <div>Loading...</div>;
+      return <LoadingComponent />;
     }
 
-    if (isError) {
-        return <div>Error occurred while fetching product details</div>;
-    }
-
+  if (isError && error) {
+    const errorMessage = (error as any).data ? JSON.stringify((error as any).data) : 'An error occurred.';
+    const status = (error as any).status || 'Error';
+    return <ErrorComponent message={errorMessage} status={status} />;
+  }
     if (!productDetails) {
         return null; // or any other fallback UI when productDetails is not available
     }
@@ -39,7 +43,13 @@ const ProductDetailPage:FC = ({ params }:any) => {
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2">
-          <img src={productDetails.image} alt="Product" className="w-full h-auto" />
+          <Image 
+            src={productDetails.image} 
+            alt="Product" 
+            // className="w-full h-auto" 
+            height={400}
+            width={500}
+            />
         </div>
         <div className="md:w-1/2 md:pl-8">
           <h1 className="text-3xl font-semibold mb-4">{productDetails.title}</h1>
