@@ -77,8 +77,8 @@ const CategorySlider = () => {
                                             />
                                         </div>
                                         <div className="absolute category_label flex items-center justify-between left-[-9px] bottom-[15px] px-[15px]">
-                                            <h4 className='text-[25px] font-normal leading-[53px] mr-[20px] text-[#000] capitalize'>{category}</h4>
-                                            <span className='text-[#14B1F0] text-[21px] leading-[53px]'>Shop</span>
+                                            <h4 className='md:text-[25px] sm:text-[18px] font-normal md:leading-[36px] sm:leading-[25px] mr-[20px] text-[#000] capitalize'>{category}</h4>
+                                            <span className='text-[#14B1F0] md:text-[21px] sm:text[16px] leading-[53px]'>Shop</span>
                                         </div>
                                     </div>
                                 </Link>
