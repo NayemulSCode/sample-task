@@ -33,10 +33,12 @@ const CategoryProducts = () => {
                         key={index}
                         className="h-288px w-414px flex flex-col items-center"
                     >
-                        <img
+                        <Image
                             src={product.image}
                             alt={product.title}
-                            className="h-2/3 w-full object-cover"
+                            height={288}
+                            width={414}
+                            // className="h-2/3 w-full object-cover"
                         />
                         <div className="h-1/3 w-full flex items-center justify-center bg-gray-200">
                             <p>{product.title}</p>
@@ -50,10 +52,12 @@ const CategoryProducts = () => {
                         key={index}
                         className="h-588px w-414px flex flex-col items-center"
                     >
-                        <img
+                        <Image
                             src={product.image}
                             alt={product.title}
-                            className="h-2/3 w-full object-cover"
+                            height={588}
+                            width={414}
+                            // className="h-2/3 w-full object-cover"
                         />
                         <div className="h-1/3 w-full flex items-center justify-center bg-gray-200">
                             <p>{product.title}</p>
@@ -67,10 +71,12 @@ const CategoryProducts = () => {
                         key={index}
                         className="h-288px w-414px flex flex-col items-center"
                     >
-                        <img
+                        <Image
                             src={product.image}
                             alt={product.title}
-                            className="h-2/3 w-full object-cover"
+                            height={288}
+                            width={414}
+                            // className="h-2/3 w-full object-cover"
                         />
                         <div className="h-1/3 w-full flex items-center justify-center bg-gray-200">
                             <p>{product.title}</p>

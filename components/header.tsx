@@ -10,31 +10,31 @@ import Logo from '../public/image/logo.png'
 const Header = () => {
   return (
     <div className=''>
-        <div className="max-w-[1640px] w-full mx-auto lg:px-8 md:px-6 px-4 py-[7px] flex items-center justify-between bg-[#03484D]">
-            <div className='flex items-center'>
-                <Link href="#">
-                    <Image
-                        src={Logo}
-                        width={150}
-                        title='winstore_logo'
-                        alt='winstore_logo'
-                        className='mr-[30px]'
-                    />
-                </Link>
-                <div className='flex h-[40px] bg-[#fff] py-[5px] px-[18px] rounded-[10px]'>
-                    <select className='select_cat h-full border-0 outline-0 !shadow-none text-[#ABA3A3]' name="categories" id="categories">
-                        <option defaultValue="All Categories" value="all categories">All Categories</option>
-                        <option value="Electronics">Electronics</option>
-                        <option value="Fashion">Fashion</option>
-                    </select>
-                    <div className="relative srcch_wrap">
-                            <input className='md:w-[320px] h-full text-[#ABA3A3] pl-[20px] border-0 outline-0 !shadow-none' type="text" placeholder='Search for products' />
-                        <div className='w-[50px] h-[40px] flex items-center justify-center top-[-5px] rounded-tr-[10px] rounded-br-[10px] bg-[#B6B6B6] cursor-pointer absolute right-[-18px]'>
-                            <FaSearch className='text-[#fff] text-[22px]' />
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div className="max-w-7xl bg-[#03484D] mx-auto px-4 py-2 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+              <div className='flex items-center'>
+                  <Link href="#">
+                      <Image
+                          src={Logo}
+                          width={150}
+                          title='winstore_logo'
+                          alt='winstore_logo'
+                          className='mr-4 md:mr-6'
+                      />
+                  </Link>
+                  <div className='flex h-10 bg-white py-1 px-3 md:px-4 rounded-2xl'>
+                      <select className='select_cat h-full border-0 outline-none shadow-none text-gray-500' name="categories" id="categories">
+                          <option defaultValue="all categories">All Categories</option>
+                          <option value="Electronics">Electronics</option>
+                          <option value="Fashion">Fashion</option>
+                      </select>
+                      <div className="relative srcch_wrap ml-3">
+                          <input className='md:w-80 h-full text-gray-500 pl-8 border-0 outline-none shadow-none' type="text" placeholder='Search for products' />
+                          <div className='w-10 h-10 flex items-center justify-center md:top-[-4px] md:right-[-16px] top-[-4px] right-[-6px] rounded-tr-lg rounded-br-lg bg-gray-300 cursor-pointer absolute'>
+                              <FaSearch className='text-white text-lg' />
+                          </div>
+                      </div>
+                  </div>
+              </div>
             <div className='flex'>
                 <ul className='flex items-center text-[#fff]'>
                     <li className='mr-[20px]'>
@@ -73,58 +73,58 @@ const Header = () => {
                 </ul>
             </div>
         </div>
-        <div className="max-w-[1640px] w-full mx-auto lg:px-8 md:px-6 px-4 py-[10px] flex items-center justify-between bg-[#0E3B3E]">
-            <ul className='flex items-center text-[#fff]'>
-                <li className='mr-[20px]'>
-                    <Link href="#" className='flex items-center text-[15px]'>
-                        <FaBars className='mr-[7px] mb-[2px]' />
-                        <span>Brouse By Category</span>
-                    </Link>
-                </li>
-                <li className='mr-[20px]'>
-                    <Link href="#" className='text-[15px]'>
-                        Home
-                    </Link>
-                </li>
-                <li className='mr-[20px]'>
-                    <Link href="#" className='text-[15px]'>
-                        Easy Monthly Installments
-                    </Link>
-                </li>
-                <li className='mr-[20px]'>
-                    <Link href="#" className='text-[15px]'>
-                        Shop by Brands
-                    </Link>
-                </li>
-                <li className='mr-[20px]'>
-                    <Link href="#" className='text-[15px]'>
-                        Become a Vendor
-                    </Link>
-                </li>
-            </ul>
-            <ul className="flex items-center text-[#fff]">
-                <li className='mr-[20px]'>
-                    <Link href="#">
-                        <FaFacebookF className='text-[22px]' />
-                    </Link>
-                </li>
-                <li className='mr-[20px]'>
-                    <Link href="#">
-                        <FaTwitter className='text-[22px]' />
-                    </Link>
-                </li>
-                <li className='mr-[20px]'>
-                    <Link href="#">
-                        <FaLinkedinIn className='text-[22px]' />
-                    </Link>
-                </li>
-                <li className=''>
-                    <Link href="#">
-                        <FaInstagram className='text-[22px]' />
-                    </Link>
-                </li>
-            </ul>
-        </div>
+          <div className="max-w-7xl mx-auto bg-[#03484D] px-4 pb-2 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+              <ul className="flex items-center text-white mb-4 md:mb-0">
+                  <li className="mr-4">
+                      <Link href="#" className="flex items-center md:text-[17px] text-[14px] leading-normal">
+                          <FaBars className="mr-1" />
+                          <span>Browse By Category</span>
+                      </Link>
+                  </li>
+                  <li className="mr-4">
+                      <Link href="#" className="d:text-[14px] text-[12px] leading-normal">
+                          Home
+                      </Link>
+                  </li>
+                  <li className="mr-4">
+                      <Link href="#" className="d:text-[14px] text-[12px] leading-normal">
+                          Easy Monthly Installments
+                      </Link>
+                  </li>
+                  <li className="mr-4">
+                      <Link href="#" className="d:text-[14px] text-[12px] leading-normal">
+                          Shop by Brands
+                      </Link>
+                  </li>
+                  <li>
+                      <Link href="#" className="d:text-[14px] text-[12px] leading-normal">
+                          Become a Vendor
+                      </Link>
+                  </li>
+              </ul>
+              <ul className="flex items-center text-white">
+                  <li className="mr-4">
+                      <Link href="#">
+                          <FaFacebookF className="text-lg" />
+                      </Link>
+                  </li>
+                  <li className="mr-4">
+                      <Link href="#">
+                          <FaTwitter className="text-lg" />
+                      </Link>
+                  </li>
+                  <li className="mr-4">
+                      <Link href="#">
+                          <FaLinkedinIn className="text-lg" />
+                      </Link>
+                  </li>
+                  <li>
+                      <Link href="#">
+                          <FaInstagram className="text-lg" />
+                      </Link>
+                  </li>
+              </ul>
+          </div>
     </div>
   )
 }
