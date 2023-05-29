@@ -78,7 +78,7 @@ const Products:FC = () => {
                       {products &&
                           products.map((product: Product, index: number) => (
                             <SwiperSlide key={index}>
-                                  <div className="relative group promo_single_item my-[10px] offer_single_item flsh_wd_item md:h-[446px] text-center cursor-pointer rounded-bl-[5px] rounded-br-[5px] bg-[#ffffff] rounded-[5px]">
+                                  {/* <div className="relative group promo_single_item my-[10px] offer_single_item flsh_wd_item md:h-[446px] text-center cursor-pointer rounded-bl-[5px] rounded-br-[5px] bg-[#ffffff] rounded-[5px]">
                                       <div className="md:p-[15px] p-[8px] md:pt-[15px] pt-[40px] relative text-[#000000] bg-[#ffffff] rounded-bl-[5px] rounded-br-[5px]"> 
                                           <p>{product.category}</p>
                                           <Link href={`/products/${product?.id}`}>
@@ -109,7 +109,38 @@ const Products:FC = () => {
                                                 </span>
                                           </div>
                                       </div>
+                                  </div> */}
+
+                                  <div className="promo_single_item offer_single_item text-center bg-light cursor-pointer p-[10px]">
+                                        <p className='text-[#000] text-[12px] font-normal leading-[15px] mb-[5px] line-clamp-1'>{product.category}</p>
+                                        <Link href={`/products/${product?.id}`} className="font-normal text-[15px] leading-[18px] text-[#034E53] line-clamp-1 ">
+                                            {product?.title}
+                                        </Link>
+                                    <div className="promo_card">
+                                        <div className="promo_card_img">
+                                            <Image
+                                                src={product.image}
+                                                alt={product.title}
+                                                title={product.title}
+                                                // layout={`fill`}
+                                                height={200}
+                                                width={300}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="relative">
+                                        <div className="md:flex items-center justify-center mb-[12px]">
+                                            <span className="text-[#697475] md:text-[13px] leading-[16px] text-[11px] line-clamp-1 md:mr-[10px] font-normal">
+                                                <del>RS 1,000</del>
+                                            </span>
+                                            <span className="text-[#0AAEB9] md:text-[15px] leading-[18px] text-[13px] font-normal line-clamp-1">
+                                                RS {product?.price}
+                                            </span>
+                                        </div>
+                                        <button className='bg-[#15ADB7] hover:bg-[#03484D] text-[#fff] border-0 outline-0 px-[5px] py-[8px] w-full'>Add to cart</button>
+                                    </div>
                                   </div>
+
                               </SwiperSlide>
                           ))}
                   </div>

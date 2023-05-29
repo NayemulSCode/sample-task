@@ -10,7 +10,7 @@ import Logo from '../public/image/logo.png'
 const Header = () => {
   return (
     <div className=''>
-          <div className="max-w-7xl bg-[#03484D] mx-auto px-4 py-2 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="max-w-[1640px] w-full bg-[#03484D] mx-auto px-4 py-2 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
               <div className='flex items-center'>
                   <Link href="#">
                       <Image
@@ -73,7 +73,7 @@ const Header = () => {
                 </ul>
             </div>
         </div>
-          <div className="max-w-7xl mx-auto bg-[#03484D] px-4 pb-2 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="max-w-[1640px] w-full mx-auto bg-[#0E3B3E] px-4 py-2 md:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
               <ul className="flex items-center text-white mb-4 md:mb-0">
                   <li className="mr-4">
                       <Link href="#" className="flex items-center md:text-[17px] text-[14px] leading-normal">
