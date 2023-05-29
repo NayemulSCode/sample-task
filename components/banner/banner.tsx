@@ -72,7 +72,7 @@ const Banner:FC = () => {
                                                 layout="fill"
                                             />
                                         </div>
-                                        <div className='absolute top-[30px] right-[138px] flex items-center justify-center w-[165px] h-[159px] rounded-[83px] text-[47px] font-normal text-[#fff] leading-[58px] text-center hero_bnr_sticker'>
+                                        <div className='absolute md:top-[30px] top-[12px] md:right-[124px] right-[33px] flex items-center justify-center md:w-[165px] w-[50px] md:h-[159px] h-[50px] rounded-[83px] md:text-[47px] text-[16px] font-normal text-[#fff] md:leading-[58px] leading-[22px] text-center hero_bnr_sticker'>
                                             40% <br />
                                             Off
                                           </div>
