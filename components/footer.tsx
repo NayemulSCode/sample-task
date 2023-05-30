@@ -150,7 +150,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="md:mb-0 md:px-3 px-0 mb-[20px]">
+                <div className="md:mb-0 md:px-3 px-0">
                     <h5 className="md:text-[20px] text-[12px] text-[#00CAD7] font-bold md:mb-8 mb-[15px]">
                         Customer Care
                     </h5>
