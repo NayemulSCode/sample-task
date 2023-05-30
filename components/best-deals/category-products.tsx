@@ -11,10 +11,10 @@ const CategoryProducts = () => {
         categoryName: categoryName,
     })
     const { data: categories, isLoading:categoryLoagind, isError:categoryError } = useGetCategoriesQuery();
-    return (<div className="relative m-auto lg:space-s-8 w-full px-2 twxl_px_none lg:px-7 max-w-[1640px] md:px-5 md:mb-[30px] mb-[20px]">
-        <div className="flex justify-between pb-[15px]">
+    return (<div className="relative m-auto lg:space-s-8 w-full px-4 twxl_px_none lg:px-7 max-w-[1640px] md:px-5 md:mb-[30px] mb-[20px]">
+        <div className="flex flex-wrap justify-between pb-[15px]">
             <h2 className="text-[#333] uppercase md:text-[22px] text-[20px] font_sprn_semibold mb-[0px] text-start"><span className="text-[#15ADB7]">Best</span> Deals</h2>
-            <ul className="flex items-center">
+            <ul className="flex flex-wrap items-center">
                 {categories&&categories.map((category:any, index) => (
                     <li key={index}>
                         {/* <span onClick={() => { setCategoryName(category)}} className="my-2 cursor-pointer">
@@ -32,7 +32,7 @@ const CategoryProducts = () => {
                 ))}
             </ul>
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
             <div className="col-span-1 flex flex-col">
                 {products &&products.slice(0, 2).map((product, index) => (
                     <Link
