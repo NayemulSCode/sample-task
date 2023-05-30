@@ -181,7 +181,7 @@ h1,h2,h3,h4,h5,h6,a,p,span,strong,button,input{
     margin: 0 auto;
     max-height: 128px;
 }
-/* slider error button */
+/* slider arrow button */
 .product_slide_prev {
   top: 50%;
   left: 0%;
